@@ -4,7 +4,7 @@
  
  ### 统计饼图
  
- 此饼图应该满足大部分功能和UI的定制变化
+ 此饼图应该满足大部分功能和UI的定制变化,其中自己也参考的一些其他开源统计饼图的写法
  
  ### 用法
  
@@ -16,9 +16,9 @@
     android:layout_centerInParent="true"
     />
 ```
-####layout_width layout_height 可以自己指定
+#### layout_width layout_height 可以自己指定
  
-####实现PieView.ClickListener接口
+#### 实现PieView.ClickListener接口
  ```
  class MainActivity : AppCompatActivity(),PieView.ClickListener
  
@@ -30,13 +30,13 @@
   }
  
 ```
- ####初始数据
+ #### 初始数据
  ```
     private val value = intArrayOf(20, 40, 30, 60, 40, 30)
     private val name = arrayOf("A", "B", "C", "D", "E", "F")
     private val color = intArrayOf(R.color.a, R.color.b, R.color.c, R.color.d, R.color.e, R.color.f)
 ```
-####设置属性
+#### 设置属性
  ```
         //设置文字颜色 默认白色
         pieView?.setTextColor(Color.WHITE)
@@ -64,7 +64,7 @@
         pieView?.setListener(this)
 ```
 
- ####设置数据
+ #### 设置数据
 ```
  //设置所有颜色
   pieView?.setmColors(colors)
